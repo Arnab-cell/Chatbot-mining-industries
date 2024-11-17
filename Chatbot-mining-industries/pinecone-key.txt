@@ -1,0 +1,8 @@
+# Load Pinecone API key from a file
+with open("pinecone-key.txt", "r") as file:
+    pinecone_api_key = file.read().strip()
+
+import pinecone
+
+# Initialize Pinecone with the API key
+pinecone.init(api_key=pinecone_api_key, environment="pcsk_7XeMeH_9EvZnxPXanPubvsgrTUx3kuJ4vGSK17iWSyuS3CfcAshFpgfZBP3kKMUmaND5tV")

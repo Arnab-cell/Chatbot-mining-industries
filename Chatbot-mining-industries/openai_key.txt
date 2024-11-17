@@ -1,0 +1,5 @@
+with open("openai_key.txt", "r") as file:
+    openai_api_key = file.read().strip()
+
+import openai
+openai.api_key = openai_api_key
